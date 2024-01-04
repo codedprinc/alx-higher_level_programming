@@ -14,6 +14,7 @@ if number > 0:
 
 if number < 0:
     l_d = (number * -1) % 10
+    l_d *= -1
     if l_d > 5:
         print("Last digit of {} is {} and is greater than 5".format(number, l_d))
     elif l_d == 0:
