@@ -6,4 +6,4 @@ for num in range(0, 10):
                 print("{0}{1}".format(num, j), end=' ')
             else:
                 print("{0}{1}".format(num, j), end=', ')
-print()
+#print("\n")
