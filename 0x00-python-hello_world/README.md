@@ -60,7 +60,7 @@ File_name | Description
 [9-easter_egg.py](9-easter_egg.py) | Write a Python script that prints The Zen of Python, by TimPeters, followed by a new line.
  || Your script should be maximum 98 characters long (please check with wc -m 9-easter_egg.py)
  || 
-[10-check_cycle.c][(10-check_cycle.c), [lists.h](lists.h) | Technical interview preparation:
+[10-check_cycle.c](10-check_cycle.c), [lists.h](lists.h) | Technical interview preparation:
  || You are not allowed to google anything
  ||  Whiteboard first
  ||  This task and all future technical interview prep tasks will include checks for the efficiency of your solution, i.e. is your solutions runtime fast enough, does your solution require extra memory usage / mallocs, etc.
