@@ -9,6 +9,6 @@ res3 = div(a, b)
 
 if __name__ = "__main__":
     print("{0} + {1} = {2:d}".format(a, b, res0))
-    print("{0} + {1} = {2:d}".format(a, b, res1))
-    print("{0} + {1} = {2:d}".format(a, b, res2))
-    print("{0} + {1} = {2:d}".format(a, b, res3))
+    print("{0} - {1} = {2:d}".format(a, b, res1))
+    print("{0} * {1} = {2:d}".format(a, b, res2))
+    print("{0} / {1} = {2:d}".format(a, b, res3))
