@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 def element_at(my_list, idx):
-    l = len(my_list)
+    length = len(my_list)
     if idx < 0:
         return None
-    elif idx > l:
+    elif idx > length:
         return None
     elif idx >= 0:
-        ans = "{}".format(my_list[idx])
-        return ans
+        return my_list[idx]
