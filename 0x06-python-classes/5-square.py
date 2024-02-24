@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""This module contains a class called square
+"""
+
+
 class Square:
     """Square Class
 
@@ -31,23 +35,11 @@ class Square:
 
     @property
     def size(self):
+        """'int': Getter that gets the value of size."""
         return self.__size
 
     @size.setter
     def size(self, size):
-        """__init__
-
-        The size setter method update the size value of the square.
-
-        Attributes:
-            size (:obj:`int`): The new size of the square.
-
-        Raises:
-            TypeError: If `size` type is not `int`.
-
-            ValueError: If `size` is less than `0`.
-
-        """
 
         if type(size) is not int:
             raise TypeError('size must be an integer')
