@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-"""Square Class
+"""This module defines a Square Class
 
-A Square Class
+Classes:
+  Square Class
 
 """
 
 
 class Square:
+    """Represents a square
+    For making squares
+    """
 
     def __init__(self, size=0):
         """__init__
