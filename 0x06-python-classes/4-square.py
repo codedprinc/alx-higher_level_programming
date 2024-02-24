@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""This ia a module reperesenting a square class
+"""
+
+
 class Square:
     """Square Class
 
@@ -31,6 +35,7 @@ class Square:
 
     @property
     def size(self):
+        """int: Getter that gets the size value."""
         return self.__size
 
     @size.setter
