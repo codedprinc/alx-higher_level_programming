@@ -9,6 +9,8 @@ class Rectangle:
         number_of_instances (int): counts the instances of initializations.
     """
 
+    number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """Initializes the class with two arguments
 
@@ -22,7 +24,6 @@ class Rectangle:
            ValueError: If `width` or `height` type is less than `0`
 
         """
-        number_of_instances = 0
 
         if type(width) is not int:
             raise TypeError('width must be an integer')
