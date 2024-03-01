@@ -113,7 +113,7 @@ class Rectangle:
 
     def __repr__(self):
         """
-        Returns the representation of the rectangle
+        Returns the string representation of the rectangle
         """
 
         w = str(eval('self.width'))
