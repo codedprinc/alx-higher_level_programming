@@ -77,7 +77,7 @@ class Rectangle:
 
         return 2 * (self.__height + self.__width)
 
-    def _draw_rectangle(self):
+    def __draw_rectangle(self):
         """
 
         Draw the Rectangle with their size
