@@ -1,5 +1,5 @@
 File_name | Description
-|| --- | ---
+--- | ---
 [0-rectangle.py](0-rectangle.py) | Write an empty class `Rectangle` that defines a square
 || You are not allowed to import any module
 ||
