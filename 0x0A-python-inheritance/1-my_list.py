@@ -1,4 +1,4 @@
-#!/usr/bin/pytyhon3
+#!/usr/bin/python3
 """
 A module to print a list in ascending order
 """
