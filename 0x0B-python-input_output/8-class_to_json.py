@@ -3,7 +3,6 @@
 8. Class to JSON
 
 """
-import json
 
 def class_to_json(obj):
     """
@@ -14,4 +13,4 @@ def class_to_json(obj):
     Returns:
        `dict` : description of the data structures in the class
     """
-    return obj.__dict__
+    return (vars(obj))
