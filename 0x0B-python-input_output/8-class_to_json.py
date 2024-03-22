@@ -14,4 +14,4 @@ def class_to_json(obj):
     Returns:
        `dict` : description of the data structures in the class
     """
-    return (vars(obj))
+    return obj.__dict__
