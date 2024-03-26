@@ -133,11 +133,12 @@ class Rectangle(Base):
         """
 
         list_1 = []
+        list_names = ['id', 'width', 'height', 'x', 'y']
         for arg in args:
             list_1.append(arg)
 
-        self.id = list_1[0]
-        self.width = list_1[1]
-        self.height = list_1[2]
-        self.x = list_1[3]
-        self.y = list_1[4]
+        arg_len = len(args)
+
+        if arg_len > 0:
+            for i in range(0, arg_len):
+                setattr(self, list_names[i], list_1[i])
