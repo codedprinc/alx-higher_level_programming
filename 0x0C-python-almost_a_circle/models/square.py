@@ -57,7 +57,7 @@ class Square(Rectangle):
 
         if argc > 0:
             for i in range(argc):
-                settattr(self, modif_attrs[i], args[i])
+                setattr(self, modif_attrs[i], args[i])
         elif kwargc > 0:
             for k, v in kwargs.items():
                 if k in modif_attrs:

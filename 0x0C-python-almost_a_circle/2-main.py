@@ -10,4 +10,6 @@ if __name__ == "__main__":
     s1.display()
 
     print("---")
-    
+
+    s1.update(1, 2, 4, 5)
+    print(s1)
