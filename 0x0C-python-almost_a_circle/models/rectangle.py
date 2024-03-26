@@ -124,3 +124,20 @@ class Rectangle(Base):
     def __str__(self):
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".\
             format(self.id, self.x, self.y, self.width, self.height)
+
+    def update(self, *args):
+        """
+        Updates the class `Rectangle` by assigning an argument to each
+        attribute.
+
+        """
+
+        list_1 = []
+        for arg in args:
+            list_1.append(arg)
+
+        self.id = list_1[0]
+        self.width = list_1[1]
+        self.height = list_1[2]
+        self.x = list_1[3]
+        self.y = list_1[4]
