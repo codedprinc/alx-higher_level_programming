@@ -74,10 +74,3 @@ class Base:
             else:
                 list_dicts = [o.to_dictionary() for o in list_objs]
                 f.write(Base.to_json_string(list_dicts))
-
-#            json_attrs = []
-
-#            for elem in list_objs:
- #               json_attrs.append(elem.to_dictionary())
-
-  #          return f.write(cls.to_json_string(json_attrs))
