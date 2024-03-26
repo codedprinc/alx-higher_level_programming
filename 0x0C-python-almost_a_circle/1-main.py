@@ -7,7 +7,9 @@ if __name__ == "__main__":
     r1 = Rectangle(10, 2)
     print(r1)
     print("_____")
-    r1.update(32)
+    r_d = r1.to_dictionary()
+    print(r_d)
+#    r1.update(32)
     print(r1)
 
     print("_____")

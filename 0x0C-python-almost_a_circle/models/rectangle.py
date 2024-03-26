@@ -154,7 +154,7 @@ class Rectangle(Base):
 
         if argc > 0:
             for i in range(argc):
-                settattr(self, modif_attrs[i], args[i])
+                setattr(self, modif_attrs[i], args[i])
         elif kwargc > 0:
             for k, v in kwargs.items():
                 if k in modif_attrs:
@@ -166,9 +166,9 @@ class Rectangle(Base):
         """
 
         return {
-            'id': self.id
-            'width': self.width
-            'height': self.height
-            'x': self.x
-            'y': self.y
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
+            'y': self.y,
         }
