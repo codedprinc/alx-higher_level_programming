@@ -13,3 +13,6 @@ if __name__ == "__main__":
 
     r2 = Rectangle(4, 6)
     r2.display()
+
+    print("-------*---")
+    print(r2)
