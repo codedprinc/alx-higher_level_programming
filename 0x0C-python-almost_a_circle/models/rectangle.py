@@ -125,12 +125,12 @@ class Rectangle(Base):
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".\
             format(self.id, self.x, self.y, self.width, self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         Updates the class `Rectangle` by assigning an argument to each
         attribute.
 
-        """
+        ## This was when only having args as the parameter; no kwargs.
 
         list_1 = []
         list_names = ['id', 'width', 'height', 'x', 'y']
@@ -140,5 +140,22 @@ class Rectangle(Base):
         arg_len = len(args)
 
         if arg_len > 0:
-            for i in range(0, arg_len):
+            for i in range(0, arg_len:
                 setattr(self, list_names[i], list_1[i])
+
+        """
+
+        argc = len(args)
+        kwargc = len(kwargs)
+        modif_attrs = ['id', 'width', 'height', 'x', 'y']
+
+        if argc > 5:
+            argc = 5
+
+        if argc > 0:
+            for i in range(argc):
+                settattr(self, modif_attrs[i], args[i])
+        elif kwargc > 0:
+            for k, v in kwargs.items():
+                if k in modif_attrs:
+                    setattr(self, k, v)
