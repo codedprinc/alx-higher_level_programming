@@ -78,7 +78,6 @@ class Rectangle(Base):
         self.check_if_integer(y, 'y')
         self.__y = y
 
-
     def check_if_integer(self, value, param):
         """`any` check if `attr_i` is an `int`
 
