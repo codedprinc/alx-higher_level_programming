@@ -26,6 +26,10 @@ class Rectangle(Base):
            y (int): a coordinate or position of a point
 
         """
+        self.check_if_integer(width, 'width')
+        self.check_if_integer(height, 'height')
+        self.check_if_integer(x, 'x')
+        self.check_if_integer(y, 'y')
 
         self.__width = width
         self.__height = height
@@ -41,6 +45,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, width):
+        self.check_if_integer(width, 'width')
         self.__width = width
 
     @property
@@ -50,6 +55,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, height):
+        self.check_if_integer(height, 'height')
         self.__height = height
 
     @property
@@ -59,6 +65,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, x):
+        self.check_if_integer(x, 'x')
         self.__x = x
 
     @property
@@ -68,4 +75,21 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, y):
+        self.check_if_integer(y, 'y')
         self.__y = y
+
+
+    def check_if_integer(self, value, param):
+        """`any` check if `attr_i` is an `int`
+
+        Raises:
+          TypeError: If `attr_i` is not `int`.
+        """
+        if type(value) is not int:
+            raise TypeError(param +  'must be an integer')
+
+        if value <= 0 and param in ('width', 'height'):
+            raise ValueError(param + 'must be > 0')
+
+        if value < 0 and param in ('x', 'y'):
+            raise ValueError(param + 'must be >= 0')
