@@ -5,6 +5,7 @@
 Module contains answer to task 1
 
 """
+import json
 
 
 class Base:
@@ -37,3 +38,24 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """
+        Returns the JSON string representaion of list_diciotnaries.
+
+        Args:
+           list_dictionaries (`list` of `dict`): List of dicitionaries.
+            If `list_dictionaries` is `None` or empty, return `[]`
+                otherwise, return the JSON string representation of
+            list_dictionaries.
+
+        Returns:
+           `JSON` string representaion of list_dictionaries.
+
+        """
+
+        if list_dictionaries is None or len(list_dictionaries) == 0:
+            return '[]'
+
+        return json.dumps(list_dictionaries)
